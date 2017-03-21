@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.niu.cs.z1570929.assignment3.MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/drakepng"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/drakepng" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/drakeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drakepng"
+        android:layout_alignRight="@+id/drakepng"
+        android:layout_alignEnd="@+id/drakepng"
+        android:textSize="12dp"
+        android:onClick="doDrake" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/housejpg"
+        android:src="@drawable/housejpg"
+        android:layout_below="@+id/drakeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/teardropButton"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/housejpg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/metalacolypsejpg"
+        android:layout_alignEnd="@+id/metalacolypsejpg"
+        android:onClick="doTeardrop" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/metalacolypsejpg"
+        android:src="@drawable/metalacolypsejpg"
+        android:layout_below="@+id/teardropButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/thunderhorseButton"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/metalacolypsejpg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/metalacolypsejpg"
+        android:layout_alignEnd="@+id/metalacolypsejpg"
+        android:onClick="doThunderhorse" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/metallicajpg"
+        android:layout_alignTop="@+id/drakepng"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/metallicajpg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/feulButton"
+        android:layout_below="@+id/metallicajpg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/metallicajpg"
+        android:layout_alignStart="@+id/metallicajpg"
+        android:onClick="doFeul" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/hurtjpg"
+        android:src="@drawable/hurtjpg"
+        android:layout_below="@+id/feulButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/hurtButton"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/hurtjpg"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/redhotchilipeppersjpg"
+        android:layout_alignStart="@+id/redhotchilipeppersjpg"
+        android:onClick="doHurt" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/redhotchilipeppersjpg"
+        android:src="@drawable/redhotchilipeppersjpg"
+        android:layout_below="@+id/hurtButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/aroundtheworldButton"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/redhotchilipeppersjpg"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/redhotchilipeppersjpg"
+        android:layout_alignStart="@+id/redhotchilipeppersjpg"
+        android:onClick="doAroundtheworld" />
+
+</RelativeLayout>
